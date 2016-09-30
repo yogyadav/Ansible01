@@ -1,0 +1,14 @@
+[loadbalancer]
+lb01 ansible_host=192.168.57.2 ansible_ssh_pass=vagrant ansible_ssh_user=vagrant
+
+[webserver]
+app01 ansible_host=192.168.57.3 ansible_ssh_pass=vagrant ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/yogyadav/Mastering-Ansible/.vagrant/machines/app01/virtualbox/private_key
+
+app02 ansible_host=192.168.57.4 ansible_ssh_pass=vagrant ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/yogyadav/Mastering-Ansible/.vagrant/machines/app02/virtualbox/private_key
+
+[database]
+db01 ansible_host=192.168.57.5 ansible_ssh_pass=vagrant ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/yogyadav/Mastering-Ansible/.vagrant/machines/db01/virtualbox/private_key
+
+[control]
+control ansible_connection=local
+  
